@@ -73,7 +73,7 @@ For full step-by-step setup of the Admin VM, see [Admin VM Setup](admin/README.m
   - Perform network scan on host-only subnet
 - **Snapshot:** `base/kali-clean`
 Setup, configuration, troubleshooting, and quick reference for the Kali attacker VM.  
-  [View Attacker VM docs](home-lab-setup/attacker/README.md)
+  [View Attacker VM docs](attacker/README.md)
 
 ---
 
