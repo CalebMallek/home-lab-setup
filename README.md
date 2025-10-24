@@ -54,7 +54,7 @@ This repository documents the setup and configuration of my home cybersecurity l
   - Can ping all other VMs on host-only networks
   - Can access internet via NAT
 - **Snapshot:** `base/admin-clean`
-
+For full step-by-step setup of the Admin VM, see [Admin VM Setup](admin/README.md)
 ---
 
 ### Attacker VM
