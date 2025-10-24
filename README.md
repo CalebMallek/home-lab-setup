@@ -2,6 +2,8 @@
 
 This repository documents the setup and configuration of my home cybersecurity lab, designed for **blue team SOC skills** (defensive monitoring, analysis, and testing). Each VM and network is described step by step, including installation, configuration, and testing notes.
 
+![Home Lab Diagram](diagram.png)
+
 ---
 
 ## Table of Contents
