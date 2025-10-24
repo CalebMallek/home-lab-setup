@@ -22,7 +22,7 @@ This repository documents the setup and configuration of my home cybersecurity l
 ## Lab Overview
 - Purpose: Practice defensive SOC operations (network monitoring, endpoint detection, incident response) in a safe, isolated environment.
 - Tools used: VirtualBox, Kali Linux, Windows 10/11, Ubuntu Server, Splunk, Wireshark, etc.
-- Host OS: `YOUR_HOST_OS_HERE`
+- Host OS: Windows 10
 - Virtualization: VirtualBox 7.x
 
 ---
