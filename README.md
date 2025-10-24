@@ -31,13 +31,13 @@ This repository documents the setup and configuration of my home cybersecurity l
 | Network Name         | Type         | Purpose                                     | IP Range          |
 |---------------------|-------------|--------------------------------------------|-----------------|
 | NAT                 | NAT         | Internet access for VMs                     | Automatic       |
-| Host-only Lab Net    | Host-only   | Isolated lab network for attacker & endpoints | 192.168.56.0/24 |
-| Lab Management Net  | Host-only   | SIEM / Management access                    | 192.168.57.0/24 |
+| Host-only Lab Net    | Host-only   | Isolated lab network for attacker & endpoints | 192.168.57.0/24 |
+| Lab Management Net  | Host-only   | SIEM / Management access                    | 192.168.56.0/24 |
 
 **Notes / Steps Taken:**
 - Created host-only networks in VirtualBox.
 - Verified connectivity between Admin VM and each network.
-- IP addressing plan: `Admin VM: 192.168.56.10`, `Kali: 192.168.56.11`, etc.
+- IP addressing plan: `Admin VM: 192.168.56.10`, `Kali: 192.168.57.11`, etc.
 
 ---
 
