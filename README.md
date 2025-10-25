@@ -89,7 +89,8 @@ Setup, configuration, troubleshooting, and quick reference for the Kali attacker
   - Ensure Admin VM can reach endpoints
   - Endpoints can reach each other (if intended)
  
-[Windows Endpoint README](home-lab-setup/windows-endpoint/README.md)
+[Windows Endpoint README](windows-endpoint/README.md)
+
 
 ---
 
