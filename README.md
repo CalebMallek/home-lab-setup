@@ -88,6 +88,8 @@ Setup, configuration, troubleshooting, and quick reference for the Kali attacker
 - **Verification / Tests:**
   - Ensure Admin VM can reach endpoints
   - Endpoints can reach each other (if intended)
+ 
+[Windows Endpoint README](home-lab-setup/windows-endpoint/README.md)
 
 ---
 
