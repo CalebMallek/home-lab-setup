@@ -96,7 +96,7 @@ Setup, configuration, troubleshooting, and quick reference for the Kali attacker
 
 ### SIEM / Management VM
 - **OS:** Ubuntu Server / Windows Server
-- **Tools:** Splunk, ELK, Security Onion, etc.
+- **Tools:** Splunk, etc.
 - **Network:** Host-only Management Net + NAT
 - **Setup Notes:**
   - Install SIEM
@@ -105,6 +105,7 @@ Setup, configuration, troubleshooting, and quick reference for the Kali attacker
 - **Verification / Tests:**
   - Logs collected and visualized
   - Alerting works on sample events
+For full setup instructions, troubleshooting steps, and Windows endpoint integration, see the [Splunk SIEM Guide](splunk-siem/README.md).
 
 ---
 
