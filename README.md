@@ -4,6 +4,7 @@ This repository documents the setup and configuration of my home cybersecurity l
 
 ![Home Lab Diagram](diagram.png)
 
+
 ---
 
 ## Table of Contents
@@ -29,15 +30,16 @@ This repository documents the setup and configuration of my home cybersecurity l
 
 ## Network Setup
 | Network Name         | Type         | Purpose                                     | IP Range          |
-|---------------------|-------------|--------------------------------------------|-----------------|
-| NAT                 | NAT         | Internet access for VMs                     | Automatic       |
-| Host-only Lab Net    | Host-only   | Isolated lab network for attacker & endpoints | 192.168.57.0/24 |
-| Lab Management Net  | Host-only   | SIEM / Management access                    | 192.168.56.0/24 |
+|---------------------|-------------|-----------------------------------------------|-----------------|
+| NAT                 | NAT         | Internet access for VMs                       | Automatic       |
+| Lab Management Net  | Host-only   | SIEM / Management access / Log Forwarding     | 192.168.56.0/24 |
+| Lab-Internal        | Internal    | Isolated lab network for attacker & endpoints | 192.168.58.0/24 |
 
 **Notes / Steps Taken:**
 - Created host-only networks in VirtualBox.
+- Created internal-lab network in VirtualBox.
 - Verified connectivity between Admin VM and each network.
-- IP addressing plan: `Admin VM: 192.168.56.10`, `Kali: 192.168.57.11`, etc.
+- IP addressing plan: `Admin VM: 192.168.56.10`, `Kali: 192.168.58.0`, etc.
 
 ---
 
@@ -62,7 +64,7 @@ For full step-by-step setup of the Admin VM, see [Admin VM Setup](admin/README.m
 ### Attacker VM
 - **OS:** Kali Linux
 - **RAM / CPU / Disk:** 4GB RAM / 2 CPU / 30GB Disk
-- **Network:** NAT + Host-only Lab Net
+- **Network:** NAT + Internal-only + Host-only Lab Net
 - **Purpose:** Offensive testing and traffic generation
 - **Key Setup Steps:**
   1. Installed Kali Linux (full or light ISO)
@@ -78,16 +80,16 @@ Setup, configuration, troubleshooting, and quick reference for the Kali attacker
 ---
 
 ### Endpoint VMs
-- **OS Options:** Windows 10/11, Ubuntu Desktop, etc.
-- **Purpose:** Target systems for attacks / monitoring
-- **Network:** Host-only Lab Net
+- **OS Option:** Windows 10.
+- **Purpose:** Target system for attacks / monitoring
+- **Network:** Host-only + Internal-only Lab Net
 - **Setup Notes:**
   - Install OS
-  - Configure IPs (manual or DHCP from Admin)
+  - Configure IPs (static manual)
   - Harden basic security (firewall, updates)
 - **Verification / Tests:**
   - Ensure Admin VM can reach endpoints
-  - Endpoints can reach each other (if intended)
+  - Endpoints can reach each other
  
 [Windows Endpoint README](windows-endpoint/README.md)
 
@@ -95,9 +97,9 @@ Setup, configuration, troubleshooting, and quick reference for the Kali attacker
 ---
 
 ### SIEM / Management VM
-- **OS:** Ubuntu Server / Windows Server
-- **Tools:** Splunk, etc.
-- **Network:** Host-only Management Net + NAT
+- **OS:** Ubuntu Server
+- **Tools:** Splunk, SplunkUniversalForwarder, etc.
+- **Network:** Host-only + NAT Lab Net
 - **Setup Notes:**
   - Install SIEM
   - Connect Admin VM to SIEM dashboard
