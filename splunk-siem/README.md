@@ -218,7 +218,7 @@ index=windows_logs | stats count
 
 ## 🧠 Next Steps
 
-* Create detection dashboards (failed logins, privilege escalations, etc.).
+* Create detection dashboards and basic alerts (failed logins, privilege escalations, etc.).
 * Simulate attacks from **Kali VM** and analyze detections.
 * Later: deploy **Windows DC** for Active Directory log ingestion.
 
