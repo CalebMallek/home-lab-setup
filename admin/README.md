@@ -60,7 +60,7 @@ network:
       dhcp4: yes
     enp0s8:
       dhcp4: no
-      addresses: [192.168.56.10/24]
+      addresses: [192.168.56.11/24]
 ```
 
 **Errors & Fixes:**
