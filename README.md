@@ -105,8 +105,8 @@ Setup, configuration, troubleshooting, and quick reference for the Kali attacker
 - **Verification / Tests:**
   - Logs collected and visualized
   - Alerting works on sample events
-For full setup instructions, troubleshooting steps, and Windows endpoint integration, see the [Splunk SIEM Guide](splunk-siem/README.md).
-For detailed dashboard and alert setup instructions, see [Splunk Dashboard & Alerts Setup](splunk-dashboard-setup/README.md)
+- For full setup instructions, troubleshooting steps, and Windows endpoint integration, see the [Splunk SIEM Guide](splunk-siem/README.md).
+- For detailed dashboard and alert setup instructions, see [Splunk Dashboard & Alerts Setup](splunk-siem/splunk-dashboard-setup/README.md)
 ---
 
 ## Testing & Verification
