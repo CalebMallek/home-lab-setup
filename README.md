@@ -12,7 +12,7 @@ This repository documents the setup and configuration of my home IT support lab,
    - [Attacker VM](#attacker-vm)
    - [Endpoint VMs](#endpoint-vms)
    - [SIEM / Management VM](#siem--management-vm)
-4. [Help Desk](home-lab-setup/tier1-it-helpdesk-lab/README.md)
+4. [Help Desk](/tier1-it-helpdesk-lab/README.md)
 5. [Testing & Verification](#testing--verification)
 6. [Notes / Lessons Learned](#notes--lessons-learned)
 
