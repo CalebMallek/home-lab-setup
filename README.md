@@ -1,9 +1,6 @@
 # Home Cybersecurity Lab Documentation
 
-This repository documents the setup and configuration of my home cybersecurity lab, designed for **blue team SOC skills** (defensive monitoring, analysis, and testing). Each VM and network is described step by step, including installation, configuration, and testing notes.
-
-![Home Lab Diagram](sochomelabdiagram.png)
-
+This repository documents the setup and configuration of my home IT support lab, built to simulate Tier 1 Help Desk workflows (Active Directory account support, password resets, lockouts, domain joins, endpoint troubleshooting) while also supporting blue team/SOC visibility through centralized logging and monitoring. Each VM and network is documented step by step, including installation, configuration, testing, and troubleshooting notes.
 
 ---
 
