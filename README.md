@@ -12,13 +12,14 @@ This repository documents the setup and configuration of my home IT support lab,
    - [Attacker VM](#attacker-vm)
    - [Endpoint VMs](#endpoint-vms)
    - [SIEM / Management VM](#siem--management-vm)
-4. [Testing & Verification](#testing--verification)
-5. [Notes / Lessons Learned](#notes--lessons-learned)
+4. [Help Desk](home-lab-setup/tier1-it-helpdesk-lab/README.md)
+5. [Testing & Verification](#testing--verification)
+6. [Notes / Lessons Learned](#notes--lessons-learned)
 
 ---
 
 ## Lab Overview
-- Purpose: Practice defensive SOC operations (network monitoring, endpoint detection, incident response) in a safe, isolated environment.
+- **Purpose:** Practice **Tier 1 IT Help Desk workflows** (Active Directory account support, password resets and lockouts, domain joins, and endpoint troubleshooting) while also supporting **blue team SOC activities** such as defensive monitoring, log analysis, and incident investigation.
 - Tools used: VirtualBox, Kali Linux, Windows 10/11, Ubuntu Server, Splunk, Wireshark, etc.
 - Host OS: Windows 10
 - Virtualization: VirtualBox 7.x
@@ -56,6 +57,29 @@ This repository documents the setup and configuration of my home IT support lab,
   - Can access internet via NAT
 - **Snapshot:** `base/admin-clean`
 For full step-by-step setup of the Admin VM, see [Admin VM Setup](admin/README.md)
+
+---
+
+### Windows Domain Controller (DC)
+- **OS:** Windows Server 2025 Standard (Desktop Experience)
+- **RAM / CPU / Disk:** 8GB RAM / 2 CPU / 80GB Disk
+- **Network:** Internal Lab Network (192.168.58.0/24)
+- **Purpose:** Centralized identity management for Tier 1 IT Help Desk simulations, including user authentication, password resets, account lockouts, and domain-joined endpoint support.
+- **Key Setup Steps:**
+  1. Installed Windows Server 2025 and applied initial updates
+  2. Renamed server to `WIN-DC01`
+  3. Configured static IP address and DNS settings
+  4. Installed Active Directory Domain Services (AD DS) and DNS Server roles
+  5. Promoted server to Domain Controller and created `lab.local` domain
+  6. Created Organizational Units (LAB-Users, LAB-Computers, LAB-Groups)
+  7. Created Tier 1 Help Desk security group and delegated password reset and account unlock permissions
+- **Verification / Tests:**
+  - Domain `lab.local` resolves via DNS
+  - Domain-joined endpoint successfully authenticates domain users
+  - Password reset and account unlock tested from ADUC
+- **Snapshot:** `base/dc-post-domain`
+For full step-by-step setup, see [Tier 1 IT Help Desk Lab README](home-lab-setup/tier1-it-helpdesk-lab/README.md)
+
 ---
 
 ### Attacker VM
@@ -90,7 +114,6 @@ Setup, configuration, troubleshooting, and quick reference for the Kali attacker
  
 [Windows Endpoint README](windows-endpoint/README.md)
 
-
 ---
 
 ### SIEM / Management VM
@@ -106,6 +129,7 @@ Setup, configuration, troubleshooting, and quick reference for the Kali attacker
   - Alerting works on sample events
 - For full setup instructions, troubleshooting steps, and Windows endpoint integration, see the [Splunk SIEM Guide](splunk-siem/README.md).
 - For detailed dashboard and alert setup instructions, see [Splunk Dashboard & Alerts Setup](splunk-siem/splunk-dashboard-setup/README.md)
+
 ---
 
 ## Testing & Verification
