@@ -81,6 +81,6 @@ https://www.linkedin.com/posts/caleb-mallek-4aa10b390_itsupport-helpdesk-tier1su
 - Ticket prioritization should be driven by business impact and urgency  
 - A ticketing platform improves realism by enforcing documentation and status tracking  
 - Access issues often require Active Directory account review and credential handling  
-- Tier 1 support requires balancing resolution work with continuous triage  
+- Tier 1 support requires balancing resolution work with continuous triage and understanding of business impact 
 
 
