@@ -1,3 +1,22 @@
+# IT Support & Cybersecurity Home Lab Portfolio
+
+This repository showcases hands-on IT support troubleshooting simulations built within a custom home lab environment, demonstrating real-world workflows such as Active Directory account management, network troubleshooting, access control, and escalation procedures.
+
+## 📂 IT Support Simulations Portfolio
+
+Documented real-world style troubleshooting scenarios including:
+
+- Active Directory password reset process  
+- Account lockout & policy awareness  
+- VPN access failure (triage & escalation)  
+- Multi-ticket prioritization & access handling  
+- Network connectivity & DNS resolution  
+- Network share access & Active Directory permissions  
+
+👉 View full simulation case studies here: [SIMULATIONS.md](SIMULATIONS.md)
+
+---
+
 # Home Cybersecurity Lab Documentation
 
 This repository documents the setup and configuration of my home IT support lab, built to simulate Tier 1 Help Desk workflows (Active Directory account support, password resets, lockouts, domain joins, endpoint troubleshooting) while also supporting blue team/SOC visibility through centralized logging and monitoring. Each VM and network is documented step by step, including installation, configuration, testing, and troubleshooting notes.
