@@ -1,3 +1,5 @@
-# Simulation 004
+# Simulation 004 — IT Support Troubleshooting
 
-(Details coming soon)
+## LinkedIn Post & Video
+https://www.linkedin.com/posts/caleb-mallek-4aa10b390_itsupport-helpdesk-tier1support-activity-7420997128019218432-D6mH
+
