@@ -1,19 +1,3 @@
-# Professional IT & Cloud Infrastructure Portfolio
-
-**Looking for my professional IT administration documentation?**
-
-My primary technical portfolio showcases **hands-on experience administering, supporting, and troubleshooting live production IT environments** in a managed service provider (MSP) setting.
-
-It features technical case studies representative of real-world production responsibilities across Microsoft 365, Azure/Entra ID, network infrastructure, systems administration, and security operations.
-
-All documentation is independently written and generalized to protect client confidentiality, while demonstrating the technical knowledge, troubleshooting methodologies, and administrative experience gained from supporting business-critical infrastructure.
-
-**[View My IT Infrastructure & Operations Portfolio](https://github.com/CalebMallek/IT-Infrastructure-Operations)**
-
-**[Visit My GitHub Profile](https://github.com/CalebMallek)**
-
----
-
 ## Home Cybersecurity Lab Documentation
 
 This repository showcases my experience designing and configuring a virtualized IT and cybersecurity lab environment from scratch, including Windows/Linux administration, Active Directory, networking, and security monitoring.
